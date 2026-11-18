@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MingaGo – Rechtliche Hinweise & Datenschutzerklärung / Legal Notice & Privacy Policy</title>
+    <style>
+        :root {
+            --primary: #0077c8;
+            --primary-dark: #005a96;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            padding: 2.5rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.2rem;
+            letter-spacing: -0.5px;
+        }
+        header p {
+            margin: 0;
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 0.5rem 1.2rem;
+            border-radius: 9999px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .lang-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+        .lang-btn.active {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.25rem 3rem 1.25rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        h2 {
+            color: var(--primary-dark);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        h3 {
+            color: var(--text);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        p, li {
+            font-size: 1rem;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        .contact-box {
+            background-color: #f1f5f9;
+            border-left: 4px solid var(--primary);
+            padding: 1rem 1.25rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.5rem 0;
+        }
+        .badge {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            padding: 2rem 1rem;
+            border-top: 1px solid var(--border);
+            background: #ffffff;
+        }
+    </style>
+    <script>
+        function setLanguage(lang) {
+            document.querySelectorAll('.lang-section').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('sec-' + lang).style.display = 'block';
+            document.getElementById('btn-' + lang).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>MingaGo</h1>
+    <p>Rechtliche Angaben, Impressum & Datenschutzerklärung / Legal Notice & Privacy Policy</p>
+    <div class="lang-switch">
+        <button id="btn-de" class="lang-btn active" onclick="setLanguage('de')">🇩🇪 Deutsch</button>
+        <button id="btn-en" class="lang-btn" onclick="setLanguage('en')">🇬🇧 English</button>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- ========================================== -->
+    <!-- DEUTSCH -->
+    <!-- ========================================== -->
+    <div id="sec-de" class="lang-section">
+        
+        <div class="card">
+            <span class="badge">Impressum / Anbieterkennzeichnung</span>
+            <h2>1. Impressum (§ 5 DDG)</h2>
+            <p>Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG):</p>
+            <div class="contact-box">
+                <strong>Verantwortlicher Anbieter:</strong><br>
+                Tanja Reize<br>
+                München, Deutschland<br>
+                <strong>Kontakt / E-Mail:</strong> <a href="mailto:tanjareize@web.de">tanjareize@web.de</a>
+            </div>
+            <p><strong>App-Bezeichnung:</strong> MingaGo (Münchner Nahverkehr & Routing Assistant)<br>
+            <strong>Paketname (Application ID):</strong> <code>de.mingago.app</code></p>
+        </div>
+
+        <div class="card">
+            <span class="badge">Datenschutz</span>
+            <h2>2. Datenschutzerklärung (DSGVO)</h2>
+            <p>Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Die App <strong>MingaGo</strong> wurde nach dem Grundsatz der Datenminimierung („Privacy by Design“) entwickelt.</p>
+
+            <h3>2.1 Verantwortliche Stelle</h3>
+            <p>Verantwortlich für die Datenverarbeitung im Sinne der DSGVO ist:<br>
+            Tanja Reize &bull; E-Mail: <a href="mailto:tanjareize@web.de">tanjareize@web.de</a></p>
+
+            <h3>2.2 Standorterfassung (GPS / Netzwerk)</h3>
+            <p>MingaGo verwendet Ihre Geokoordinaten (Standortdaten), wenn Sie die Funktion „Mein Standort“ oder die Live-Kartennavigation nutzen:</p>
+            <ul>
+                <li>Die Standortdaten werden <strong>ausschließlich lokal auf Ihrem Endgerät verarbeitet</strong>, um Ihnen die nächstgelegenen Haltestellen und Verbindungen anzuzeigen.</li>
+                <li>Es werden <strong>keine Bewegungsprofile oder Verlaufsdaten</strong> auf externen Servern gespeichert oder an den App-Entwickler übermittelt.</li>
+                <li>Sie können die Standortberechtigung jederzeit in den Systemeinstellungen Ihres Android-Geräts widerrufen.</li>
+            </ul>
+
+            <h3>2.3 Mikrofonzugriff & Spracheingabe</h3>
+            <p>Wenn Sie die Spracheingabe für Start, Ziel, Zeit oder Störungen aktivieren, nutzt die App die offizielle <code>android.speech.RecognizerIntent</code>-Schnittstelle Ihres Android-Betriebssystems. Die Sprachverarbeitung erfolgt gemäß den Datenschutzbestimmungen des auf Ihrem Gerät installierten Spracherkennungsdienstes (z. B. Google LLC). Die App MingaGo selbst zeichnet keine Audiodateien auf und speichert keine Sprachaufnahmen.</p>
+
+            <h3>2.4 Externe Schnittstellen & Datenquellen</h3>
+            <p>Zur Bereitstellung von Routen, Abfahrtszeiten und Störungsinformationen kommuniziert die App mit folgenden Diensten:</p>
+            <ul>
+                <li><strong>MVG Web-Schnittstelle:</strong> Zur Abfrage von Live-Abfahrten, Liniennetz-Informationen und Routing im MVV-Raum.</li>
+                <li><strong>GTFS / GTFS-RT (gtfs.de):</strong> Deutschlandweiter Echtzeit-Stream für Verspätungen und Störungsmeldungen.</li>
+                <li><strong>DB API Marketplace / RIS:</strong> Fahrplan- und Echtzeitdaten der Deutschen Bahn (S-Bahn & Regionalzüge).</li>
+                <li><strong>Geocoding (Photon / OpenStreetMap Nominatim):</strong> Zur Auflösung von Straßennamen und Sehenswürdigkeiten in Koordinaten.</li>
+            </ul>
+            <p>Bei Anfragen an diese Schnittstellen wird lediglich die notwendige technische Server-IP und der Suchbegriff übertragen. Es werden keine personenbezogenen Daten übermittelt.</p>
+
+            <h3>2.5 Werbung & Spenden</h3>
+            <ul>
+                <li><strong>Werbung (Google AdMob):</strong> Sofern Anzeigen geschaltet werden, kann Google Werbe-IDs gemäß den Richtlinien von Google AdMob verarbeiten. Sie können personalisierte Werbung in Ihren Android-Geräteeinstellungen deaktivieren.</li>
+                <li><strong>Freiwillige Spenden:</strong> Spenden über den Google Play Store werden über das Google Play Billing-System abgewickelt. Spenden über Ko-fi leiten auf die gesicherte Website <code>ko-fi.com</code> weiter; es gelten die dortigen Zahlungsbedingungen.</li>
+            </ul>
+
+            <h3>2.6 Ihre Rechte</h3>
+            <p>Sie haben gemäß DSGVO das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten. Wenden Sie sich bei Fragen direkt an: <a href="mailto:tanjareize@web.de">tanjareize@web.de</a>.</p>
+        </div>
+
+        <div class="card">
+            <span class="badge">Rechtlicher Hinweis</span>
+            <h2>3. Haftungsausschluss & Open Data</h2>
+            <p><strong>Keine offizielle App des MVV oder der MVG:</strong> MingaGo ist eine unabhängige Applikation und steht in keinem geschäftlichen oder offiziellen Auftragsverhältnis zur Münchner Verkehrsgesellschaft mbH (MVG), dem Münchner Verkehrs- und Tarifverbund (MVV) oder der Deutschen Bahn AG.</p>
+            <p>Alle Fahrplandaten, Echtzeitzeiten, Störungsmeldungen und Tarifangaben werden ohne Gewähr auf Richtigkeit, Vollständigkeit oder ständige Verfügbarkeit bereitgestellt. Verbindliche Auskünfte erteilen ausschließlich die jeweiligen Verkehrsunternehmen.</p>
+        </div>
+
+    </div>
+
+    <!-- ========================================== -->
+    <!-- ENGLISH -->
+    <!-- ========================================== -->
+    <div id="sec-en" class="lang-section" style="display: none;">
+        
+        <div class="card">
+            <span class="badge">Legal Notice / Imprint</span>
+            <h2>1. Legal Notice (Imprint)</h2>
+            <p>Information pursuant to § 5 German Digital Services Act (DDG):</p>
+            <div class="contact-box">
+                <strong>Responsible Publisher / Developer:</strong><br>
+                Tanja Reize<br>
+                Munich, Germany<br>
+                <strong>Contact / Email:</strong> <a href="mailto:tanjareize@web.de">tanjareize@web.de</a>
+            </div>
+            <p><strong>Application Name:</strong> MingaGo (Munich Transit & Routing Assistant)<br>
+            <strong>Package Name (Application ID):</strong> <code>de.mingago.app</code></p>
+        </div>
+
+        <div class="card">
+            <span class="badge">Privacy</span>
+            <h2>2. Privacy Policy (GDPR)</h2>
+            <p>We are dedicated to safeguarding your personal data. <strong>MingaGo</strong> is designed in accordance with the data minimization principle ("Privacy by Design").</p>
+
+            <h3>2.1 Data Controller</h3>
+            <p>The controller responsible for data processing is:<br>
+            Tanja Reize &bull; Email: <a href="mailto:tanjareize@web.de">tanjareize@web.de</a></p>
+
+            <h3>2.2 Location Information (GPS / Network)</h3>
+            <p>MingaGo accesses your device location when you use the "Current Location" button or the live map navigation:</p>
+            <ul>
+                <li>Location data is <strong>processed exclusively locally on your device</strong> to identify nearby stops and calculate connections.</li>
+                <li><strong>No location logs or movement profiles</strong> are stored on external servers or transmitted to the developer.</li>
+                <li>You can grant or revoke location permissions at any time in your Android system settings.</li>
+            </ul>
+
+            <h3>2.3 Microphone & Voice Input</h3>
+            <p>When using voice commands for origin, destination, time, or disruption filters, the app invokes the standard Android <code>RecognizerIntent</code> service. Speech audio is processed according to your device's voice recognition provider (e.g. Google LLC). MingaGo does not record, transmit, or store any audio files.</p>
+
+            <h3>2.4 Transit APIs & Geocoding</h3>
+            <p>To provide routes, live departure boards, and alerts, the app connects to public APIs:</p>
+            <ul>
+                <li><strong>MVG Web Endpoints:</strong> Real-time departures, disruptions, and transit connections across Munich.</li>
+                <li><strong>GTFS / GTFS-RT (gtfs.de):</strong> Public feeds for transit schedules, delays, and service alerts.</li>
+                <li><strong>DB API Marketplace / RIS:</strong> Timetable and real-time data for regional and suburban trains (S-Bahn).</li>
+                <li><strong>Geocoding (Photon / OpenStreetMap Nominatim):</strong> Converting street addresses and points of interest into geographic coordinates.</li>
+            </ul>
+            <p>Only essential technical parameters (such as the search query and IP address) are processed during network requests. No personal information is provided to these services.</p>
+
+            <h3>2.5 Advertising & Voluntary Donations</h3>
+            <ul>
+                <li><strong>Advertising (Google AdMob):</strong> If advertising is displayed, Google may process advertising identifiers subject to Google AdMob's privacy policies. Personalized ads can be disabled in Android settings.</li>
+                <li><strong>Donations:</strong> Google Play Store donations use Google Play In-App Billing. Ko-fi donations open the secure website <code>ko-fi.com</code>; their respective terms and privacy policies apply.</li>
+            </ul>
+
+            <h3>2.6 Your Rights</h3>
+            <p>Under the GDPR, you have the right to access, rectify, or erase your data, and to restrict its processing. For inquiries, contact: <a href="mailto:tanjareize@web.de">tanjareize@web.de</a>.</p>
+        </div>
+
+        <div class="card">
+            <span class="badge">Disclaimer</span>
+            <h2>3. Disclaimer & Open Data Notice</h2>
+            <p><strong>Independent App:</strong> MingaGo is an independent transit utility and is not affiliated with, endorsed by, or partnered with Münchner Verkehrsgesellschaft mbH (MVG), Münchner Verkehrs- und Tarifverbund (MVV), or Deutsche Bahn AG.</p>
+            <p>All timetable data, real-time predictions, disruptions, and fares are provided for convenience only, without warranty of accuracy, completeness, or continuous availability. Official information must always be obtained from the respective transport operators.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 MingaGo &bull; Tanja Reize &bull; All rights reserved.
+</footer>
+
+</body>
+</html>
